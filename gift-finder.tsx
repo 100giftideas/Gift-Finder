@@ -1973,11 +1973,11 @@ Generate exactly 5 specific, concrete, non-generic gift ideas (avoid vague ideas
 The "price" field must be an estimate consistent with the given budget.`;
 
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-6",
+          model: "claude-sonnet-5",
           max_tokens: 1200,
           messages: [{ role: "user", content: prompt }],
         }),
@@ -2011,11 +2011,11 @@ Read it carefully and infer as much as you can (recipient, occasion, interests, 
 The "price" field must be a reasonable estimate; infer a sensible budget if none was mentioned.`;
 
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-6",
+          model: "claude-sonnet-5",
           max_tokens: 1200,
           messages: [{ role: "user", content: prompt }],
         }),
