@@ -2363,7 +2363,7 @@ The "price" field must be a reasonable estimate; infer a sensible budget if none
                       rel="noopener noreferrer"
                       style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 600, color: COLORS.paper, background: COLORS.violet, padding: "6px 11px", borderRadius: 999, textDecoration: "none" }}
                     >
-                      <ShoppingBag size={12} /> See options on Amazon →
+                      <ShoppingBag size={12} /> View gift options →
                     </a>
                   </div>
                 </div>
@@ -2597,7 +2597,7 @@ The "price" field must be a reasonable estimate; infer a sensible budget if none
                           rel="noopener noreferrer"
                           style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12.5, fontWeight: 600, color: COLORS.paper, background: COLORS.violet, padding: "7px 12px", borderRadius: 999, textDecoration: "none" }}
                         >
-                          <ShoppingBag size={13} /> See options on Amazon →
+                          <ShoppingBag size={13} /> View gift options →
                         </a>
                       </div>
                     </GiftTag>
