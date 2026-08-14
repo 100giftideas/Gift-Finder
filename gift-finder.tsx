@@ -2356,14 +2356,14 @@ The "price" field must be a reasonable estimate; infer a sensible budget if none
                   </div>
                   {idea.for && <div style={{ fontSize: 11.5, color: COLORS.inkSoft, marginTop: 2 }}>{idea.for}</div>}
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 8 }}>
-                    <span style={{ fontWeight: 700, fontSize: 13, color: COLORS.pinkDeep }}>{idea.price}</span>
+                    <span style={{ fontWeight: 700, fontSize: 13, color: COLORS.pinkDeep }}>Fits your budget ✓</span>
                     <a
                       href={amazonSearchUrl(idea.searchTerm || idea.name)}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 600, color: COLORS.paper, background: COLORS.violet, padding: "6px 11px", borderRadius: 999, textDecoration: "none" }}
                     >
-                      <ShoppingBag size={12} /> {T.shop}
+                      <ShoppingBag size={12} /> See options on Amazon →
                     </a>
                   </div>
                 </div>
@@ -2590,14 +2590,14 @@ The "price" field must be a reasonable estimate; infer a sensible budget if none
                       </h3>
                       <p style={{ color: COLORS.inkSoft, fontSize: 13.5, lineHeight: 1.5, margin: "0 0 12px" }}>{r.reason}</p>
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
-                        <div style={{ fontWeight: 700, fontSize: 14, color: COLORS.pinkDeep }}>{r.price}</div>
+                        <div style={{ fontWeight: 700, fontSize: 14, color: COLORS.pinkDeep }}>Fits your budget ✓</div>
                         <a
                           href={amazonSearchUrl(r.searchTerm || r.name)}
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12.5, fontWeight: 600, color: COLORS.paper, background: COLORS.violet, padding: "7px 12px", borderRadius: 999, textDecoration: "none" }}
                         >
-                          <ShoppingBag size={13} /> {T.shop}
+                          <ShoppingBag size={13} /> See options on Amazon →
                         </a>
                       </div>
                     </GiftTag>
